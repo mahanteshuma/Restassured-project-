@@ -30,5 +30,11 @@ public class BitcoinAPITest {
 
     }
 
+    @Test
+    public void getStatus(){
+        given().when().
+                get("https://api.coindesk.com/v1/bpi/currentprice.json").getStatusCode();
+
+    }
 
 }
